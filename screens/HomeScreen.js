@@ -1,8 +1,5 @@
 import React from 'react';
 import {
-  Image,
-  Platform,
-  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -12,9 +9,6 @@ import { LinearGradient } from 'expo';
 import Board from './Board';
 
 export default class HomeScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Awesome memory',
-  };
 
   state = {
     reset: false
@@ -30,8 +24,13 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <LinearGradient
-          colors={['#b9c3fa', '#b9c3fa']}
+          colors={['#3db4c3', '#c7829c', '#7d3447']}
           style={styles.contentContainer}>
+            <View style={{marginBottom: 15, marginTop: 10}}>
+              <Text style={{fontSize: 28, color: 'white', fontWeight: 'bold'}}>
+                Hello my awesome friend. I missed you)
+              </Text>
+            </View>
             <Board reset={this.state.reset} />
         </LinearGradient>
         <TouchableOpacity style={styles.start} onPress={this.reset}>

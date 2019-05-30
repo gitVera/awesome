@@ -1,11 +1,10 @@
 {
   "expo": {
-    "name": "Awesome",
-    "slug": "AwesomeProject",
+    "name": "Junior Memory",
+    "slug": "junior-memory",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
-      "ios",
       "android"
     ],
     "version": "1.0.0",
@@ -22,8 +21,8 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "android": {
+      "package": "com.gmail.sunnyvivi3.juniormemory"
     }
   }
 }
